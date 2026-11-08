@@ -1,0 +1,19 @@
+# Secrets and local config - never commit these
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Data and results - too large and machine-specific for git
+results/
+*.parquet
+*.csv
+
+# Model binaries are tracked intentionally (models/); uncomment to ignore
+# models/
